@@ -10,8 +10,8 @@ body {
   font-family: "Inter", sans-serif;
 }
 .container {
-  @apply mx-auto;
+  @apply mx-auto px-5;
 }
 .btn-primary {
-  @apply bg-primary px-8 py-3.5 rounded-sm text-white;
+  @apply bg-primary px-4 py-[7px] xl:px-8 xl:py-3.5 rounded-sm text-white;
 }
