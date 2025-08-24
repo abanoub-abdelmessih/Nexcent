@@ -3,11 +3,50 @@
   <head>
     <title>Nexcent</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lucide-static/font/lucide.css"
+    />
+
+    <!-- Main Css -->
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
+    <!-- start navbar -->
+    <nav class="bg-gray-50">
+      <div class="container flex justify-between items-center py-5">
+        <a href="#">
+          <img src="/assets/images/NavLogo.svg" alt="Nexcent Logo" />
+        </a>
+        <ul class="flex gap-[50px] justify-center items-center text-gray-900">
+          <li class="font-medium">Home</li>
+          <li>Service</li>
+          <li>Feature</li>
+          <li>Product</li>
+          <li>Testimonial</li>
+          <li>FAQ</li>
+        </ul>
+        <div class="flex gap-3.5">
+          <button class="py-2.5 px-5 text-primary">Login</button>
+          <button class="py-2.5 px-5 bg-primary text-white rounded-md">
+            Sign up
+          </button>
+        </div>
+        <div class="icon-menu md:hidden"></div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

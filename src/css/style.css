@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #4caf4f;
+  --color-D_Grey: #4d4d4d;
+  --color-Grey: #717171;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  @apply mx-auto;
+}
+.btn-primary {
+  @apply bg-primary px-8 py-3.5 rounded-sm text-white;
+}
