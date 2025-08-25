@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- start navbar -->
-    <nav class="bg-gray-50">
+    <nav class="bg-gray-50 sticky top-0" id="navbar">
       <div class="container flex justify-between items-center py-5">
         <a href="#">
           <img src="/assets/images/NavLogo.svg" alt="Nexcent Logo" />
@@ -48,7 +48,8 @@
       </div>
     </nav>
     <!-- end navbar -->
-    <header class="bg-gray-50">
+    <!-- Start Header -->
+    <header class="bg-gray-50 border-b border-gray-200">
       <div
         class="container py-16 lg:py-24 flex justify-around gap-[104px] items-center"
       >
@@ -60,7 +61,7 @@
             Lessons and insights
             <span class="text-primary block">from 8 years</span>
           </h1>
-          <h5 class="text-Grey text-sm">
+          <h5 class="text-gray text-sm md:text-base">
             Where to grow your business as a photographer: site or social media?
           </h5>
           <button class="btn-primary mt-2 lg:mt-4">Register</button>
@@ -75,6 +76,94 @@
         </div>
       </div>
     </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <!-- ! DELETE THIS MARGIN -->
+    <main class="mb-40">
+      <!-- Start Clients section -->
+      <section class="container py-10 flex flex-col gap-2 md:gap-4">
+        <header class="flex flex-col gap-2 text-center">
+          <h4 class="font-extrabold text-3xl md:text-5xl text-D_Grey">
+            Our Clients
+          </h4>
+          <p class="text-gray text-sm md:text-base">
+            We have been working with some Fortune 500+ clients
+          </p>
+        </header>
+        <main
+          class="container grid grid-cols-3 lg:grid-cols-6 place-items-center gap-y-6 md:gap-y-8 py-4 md:py-12"
+        >
+          <img src="assets/images/clients_1.svg" alt="clients logo" />
+          <img src="assets/images/clients_2.svg" alt="clients logo" />
+          <img src="assets/images/clients_3.svg" alt="clients logo" />
+          <img src="assets/images/clients_4.svg" alt="clients logo" />
+          <img src="assets/images/clients_5.svg" alt="clients logo" />
+          <img src="assets/images/clients_6.svg" alt="clients logo" />
+        </main>
+      </section>
+      <!-- End Clients section -->
+      <!-- Start community section -->
+      <section class="container flex flex-col gap-5">
+        <header class="flex flex-col items-center gap-2 text-center">
+          <h4
+            class="font-semibold text-[22px] md:text-4xl text-D_Grey max-w-xl leading-7 md:leading-11"
+          >
+            Manage your entire community in a single system
+          </h4>
+          <p class="text-gray text-sm md:text-base max-w-xl">
+            Who is Nextcent suitable for?
+          </p>
+        </header>
+        <main
+          class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center gap-y-4 text-center text-gray"
+        >
+          <div
+            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300"
+          >
+            <div>
+              <img src="assets/images/community_1.svg" alt="user icon" />
+            </div>
+            <h5 class="font-bold text-3xl leading-9">
+              Membership Organisations
+            </h5>
+            <p class="text-gray leading-5">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300"
+          >
+            <div>
+              <img src="assets/images/community_2.svg" alt="user icon" />
+            </div>
+            <h5 class="font-bold text-3xl leading-9">National Associations</h5>
+            <p class="text-gray leading-5">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300 md:col-span-2 lg:col-span-1"
+          >
+            <div>
+              <img src="assets/images/community_3.svg" alt="user icon" />
+            </div>
+            <h5 class="font-bold text-3xl max-w-3xs leading-9">
+              Clubs And Groups
+            </h5>
+            <p class="text-gray leading-5">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </main>
+      </section>
+
+      <!-- End community section -->
+    </main>
+
+    <!-- ENd Main -->
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
