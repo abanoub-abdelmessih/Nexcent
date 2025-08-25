@@ -31,12 +31,12 @@
         <ul
           class="hidden lg:flex lg:gap-8 xl:gap-[50px] justify-center items-center text-gray-900"
         >
-          <li class="font-medium">Home</li>
-          <li>Service</li>
-          <li>Feature</li>
-          <li>Product</li>
-          <li>Testimonial</li>
-          <li>FAQ</li>
+          <li class="font-medium"><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#"> Feature </a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
         <div class="hidden lg:flex lg:gap-2.5 xl:gap-3.5">
           <button class="py-2.5 px-5 text-primary">Login</button>
@@ -78,8 +78,7 @@
     </header>
     <!-- End Header -->
     <!-- Start Main -->
-    <!-- ! DELETE THIS MARGIN -->
-    <main class="mb-40 flex flex-col gap-7">
+    <main class="flex flex-col gap-7">
       <!-- Start Clients section -->
       <section class="container pt-10 flex flex-col gap-2 md:gap-4">
         <header class="flex flex-col gap-2 text-center">
@@ -120,7 +119,7 @@
           </p>
         </header>
         <main
-          class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center gap-y-4 text-center text-gray"
+          class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center gap-4 text-center text-gray"
         >
           <div
             class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300"
@@ -166,13 +165,13 @@
       </section>
       <!-- End community section -->
       <!-- Start Pixelgrade section -->
-      <section class="bg-gray-50 border-y border-gray-200 py-7 lg:py-0">
-        <div class="container flex items-center justify-evenly">
+      <section class="bg-gray-50 border-y border-gray-200 py-7">
+        <div class="container flex items-center justify-evenly gap-8">
           <div class="shrink-0 hidden lg:block">
             <img
               src="assets/images/Pixelgrade.svg"
               alt="Pixelgrade illustration"
-              class="w-full"
+              class="max-w-xs xl:max-w-full"
             />
           </div>
           <div class="max-w-2xl flex flex-col gap-2 lg:gap-4 items-start">
@@ -255,12 +254,12 @@
       <!-- End analytics section -->
       <!-- Start mobile section -->
       <section class="bg-gray-50 border-y border-gray-200 py-7">
-        <div class="container flex items-center justify-evenly">
+        <div class="container flex items-center justify-evenly gap-8">
           <div class="shrink-0 hidden lg:block">
             <img
               src="assets/images/mobile.svg"
-              alt="Pixelgrade illustration"
-              class="w-full"
+              alt="mobile illustration"
+              class="max-w-xs xl:max-w-full"
             />
           </div>
           <div class="max-w-2xl flex flex-col gap-2 lg:gap-4 items-start">
@@ -285,6 +284,68 @@
         </div>
       </section>
       <!-- End mobile section -->
+      <!-- Start Customer section -->
+      <section class="container flex justify-evenly gap-8">
+        <div class="shrink-0 hidden lg:block">
+          <img
+            src="assets/images/customer.jpg"
+            alt="product image"
+            class="max-w-xs xl:max-w-full rounded-lg"
+          />
+        </div>
+        <div class="max-w-3xl flex flex-col gap-2 lg:gap-4 justify-center">
+          <p class="text-gray text-sm md:text-base font-medium leading-6">
+            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+            lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+            enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+            enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
+            at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+            tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
+            eget lorem eu turpis vestibulum pretium. Suspendisse potenti.
+            Quisque malesuada enim sapien, vitae placerat ante feugiat eget.
+            Quisque vulputate odio neque, eget efficitur libero condimentum id.
+            Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+          </p>
+          <div class="flex flex-col gap-2">
+            <h5 class="text-primary font-semibold text-xl">Tim Smith</h5>
+            <p class="text-light-gray text-sm md:text-base">
+              British Dragon Boat Racing Association
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-9 place-items-center justify-items-center gap-y-6 md:gap-y-8 lg:justify-items-start mt-4"
+          >
+            <img src="assets/images/clients_1.svg" alt="Client Image" />
+            <img src="assets/images/clients_2.svg" alt="Client Image" />
+            <img src="assets/images/clients_3.svg" alt="Client Image" />
+            <img src="assets/images/clients_4.svg" alt="Client Image" />
+            <img src="assets/images/clients_5.svg" alt="Client Image" />
+            <img src="assets/images/clients_6.svg" alt="Client Image" />
+            <button
+              class="col-span-3 lg:col-span-6 xl:col-span-3 place-self-center text-primary font-semibold text-xl p-2 flex gap-2"
+            >
+              Meet all customers
+              <div class="icon-move-right"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- End Customer section -->
+      <!-- Start Demo Section -->
+      <section
+        class="bg-gray-50 flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-8 py-8 border-y border-gray-200"
+      >
+        <h4
+          class="font-semibold text-2xl md:text-4xl lg:text-6xl leading-7 lg:leading-16 text-gray max-w-4xl"
+        >
+          Pellentesque suscipit fringilla libero eu.
+        </h4>
+        <button class="btn-primary flex gap-2">
+          Get a Demo
+          <div class="icon-move-right"></div>
+        </button>
+      </section>
+      <!-- End Demo Section -->
     </main>
 
     <!-- ENd Main -->

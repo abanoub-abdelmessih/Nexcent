@@ -5,13 +5,14 @@
   --color-primary: #4caf4f;
   --color-D_Grey: #4d4d4d;
   --color-gray: #717171;
+  --color-light-gray: #89939e;
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
 .container {
-  @apply mx-auto px-5;
+  @apply mx-auto px-5 lg:px-10;
 }
 .btn-primary {
   @apply bg-primary px-4 py-[7px] xl:px-8 xl:py-3.5 rounded-sm text-white hover:bg-[#237D31] duration-500 cursor-pointer;
