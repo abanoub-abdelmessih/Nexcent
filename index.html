@@ -79,9 +79,9 @@
     <!-- End Header -->
     <!-- Start Main -->
     <!-- ! DELETE THIS MARGIN -->
-    <main class="mb-40">
+    <main class="mb-40 flex flex-col gap-7">
       <!-- Start Clients section -->
-      <section class="container py-10 flex flex-col gap-2 md:gap-4">
+      <section class="container pt-10 flex flex-col gap-2 md:gap-4">
         <header class="flex flex-col gap-2 text-center">
           <h4 class="font-extrabold text-3xl md:text-5xl text-D_Grey">
             Our Clients
@@ -91,7 +91,7 @@
           </p>
         </header>
         <main
-          class="container grid grid-cols-3 lg:grid-cols-6 place-items-center gap-y-6 md:gap-y-8 py-4 md:py-12"
+          class="container grid grid-cols-3 lg:grid-cols-7 place-items-center gap-y-6 md:gap-y-8 py-4 md:!p-12"
         >
           <img src="assets/images/clients_1.svg" alt="clients logo" />
           <img src="assets/images/clients_2.svg" alt="clients logo" />
@@ -99,6 +99,11 @@
           <img src="assets/images/clients_4.svg" alt="clients logo" />
           <img src="assets/images/clients_5.svg" alt="clients logo" />
           <img src="assets/images/clients_6.svg" alt="clients logo" />
+          <img
+            src="assets/images/clients_3.svg"
+            alt="clients logo"
+            class="hidden lg:block"
+          />
         </main>
       </section>
       <!-- End Clients section -->
@@ -159,8 +164,36 @@
           </div>
         </main>
       </section>
-
       <!-- End community section -->
+      <!-- Start Pixelgrade section -->
+      <section class="bg-gray-50 border-y border-gray-200 py-7 lg:py-0">
+        <div class="container flex items-center justify-evenly">
+          <div class="shrink-0 hidden lg:block">
+            <img
+              src="assets/images/Pixelgrade.svg"
+              alt="Pixelgrade illustration"
+              class="w-full"
+            />
+          </div>
+          <div class="max-w-2xl flex flex-col gap-2 lg:gap-4 items-start">
+            <h4
+              class="font-semibold text-2xl lg:text-4xl leading-7 lg:leading-11 text-D_Grey max-w-xl"
+            >
+              The unseen of spending three years at Pixelgrade
+            </h4>
+            <p class="text-gray text-sm md:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+            <button class="btn-primary mt-2 lg:mt-4">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <!-- End Pixelgrade section -->
     </main>
 
     <!-- ENd Main -->
