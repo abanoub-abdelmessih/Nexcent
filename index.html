@@ -21,15 +21,22 @@
     <!-- Main Css -->
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-gray-900 transition-colors duration-300">
     <!-- start navbar -->
-    <nav class="bg-gray-50 sticky top-0" id="navbar">
+    <nav
+      class="bg-gray-50 dark:bg-gray-800 sticky top-0 transition-colors duration-300 z-20"
+      id="navbar"
+    >
       <div class="container flex justify-between items-center py-5">
         <a href="#">
-          <img src="/assets/images/NavLogo.svg" alt="Nexcent Logo" />
+          <img
+            src="/assets/images/NavLogo.svg"
+            alt="Nexcent Logo"
+            class="dark:invert"
+          />
         </a>
         <ul
-          class="hidden lg:flex lg:gap-8 xl:gap-[50px] justify-center items-center text-gray-900"
+          class="hidden lg:flex lg:gap-8 xl:gap-[50px] justify-center items-center text-gray-900 dark:text-gray-100"
         >
           <li class="font-medium"><a href="#">Home</a></li>
           <li><a href="#">Service</a></li>
@@ -37,34 +44,48 @@
           <li><a href="#">Product</a></li>
           <li><a href="#">Testimonial</a></li>
           <li><a href="#">FAQ</a></li>
+          <li>
+            <button id="modeToggle">
+              <div class="icon-moon dark:hidden"></div>
+              <div class="icon-sun hidden dark:block"></div>
+            </button>
+          </li>
         </ul>
         <div class="hidden lg:flex lg:gap-2.5 xl:gap-3.5">
-          <button class="py-2.5 px-5 text-primary">Login</button>
-          <button class="py-2.5 px-5 bg-primary text-white rounded-md">
-            Sign up
+          <button class="py-2.5 px-5 text-primary dark:text-green-400">
+            Login
           </button>
+          <button class="btn-primary">Sign up</button>
         </div>
-        <div class="icon-menu !text-2xl lg:hidden"></div>
+        <div class="icon-menu !text-2xl lg:hidden dark:text-white"></div>
       </div>
     </nav>
     <!-- end navbar -->
     <!-- Start Header -->
-    <header class="bg-gray-50 border-b border-gray-200">
+    <header
+      class="bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 transition-colors duration-300"
+    >
       <div
         class="container py-16 lg:py-24 flex justify-around gap-[104px] items-center"
       >
         <!-- Hero Content -->
         <div class="flex flex-col gap-2 lg:gap-4 items-start">
           <h1
-            class="text-3xl md:text-5xl xl:text-[64px] font-semibold md:leading-14 xl:leading-[76px] text-D_Grey"
+            class="text-3xl md:text-5xl xl:text-[64px] font-semibold md:leading-14 xl:leading-[76px] text-D_Grey dark:text-white"
           >
             Lessons and insights
-            <span class="text-primary block">from 8 years</span>
+            <span class="text-primary dark:text-green-400 block"
+              >from 8 years</span
+            >
           </h1>
-          <h5 class="text-gray text-sm md:text-base">
+          <h5 class="text-gray dark:text-gray-300 text-sm md:text-base">
             Where to grow your business as a photographer: site or social media?
           </h5>
-          <button class="btn-primary mt-2 lg:mt-4">Register</button>
+          <button
+            class="btn-primary mt-2 lg:mt-4 bg-primary dark:bg-green-600 text-white py-2.5 px-5 rounded-md"
+          >
+            Register
+          </button>
         </div>
         <!-- Hero Image -->
         <div class="hidden lg:block">
@@ -78,30 +99,58 @@
     </header>
     <!-- End Header -->
     <!-- Start Main -->
-    <main class="flex flex-col gap-7">
+    <main
+      class="flex flex-col gap-7 dark:bg-gray-900 transition-colors duration-300"
+    >
       <!-- Start Clients section -->
       <section class="container pt-10 flex flex-col gap-2 md:gap-4">
         <header class="flex flex-col gap-2 text-center">
-          <h4 class="font-extrabold text-3xl md:text-5xl text-D_Grey">
+          <h4
+            class="font-extrabold text-3xl md:text-5xl text-D_Grey dark:text-white"
+          >
             Our Clients
           </h4>
-          <p class="text-gray text-sm md:text-base">
+          <p class="text-gray dark:text-gray-300 text-sm md:text-base">
             We have been working with some Fortune 500+ clients
           </p>
         </header>
         <main
           class="container grid grid-cols-3 lg:grid-cols-7 place-items-center gap-y-6 md:gap-y-8 py-4 md:!p-12"
         >
-          <img src="assets/images/clients_1.svg" alt="clients logo" />
-          <img src="assets/images/clients_2.svg" alt="clients logo" />
-          <img src="assets/images/clients_3.svg" alt="clients logo" />
-          <img src="assets/images/clients_4.svg" alt="clients logo" />
-          <img src="assets/images/clients_5.svg" alt="clients logo" />
-          <img src="assets/images/clients_6.svg" alt="clients logo" />
+          <img
+            src="assets/images/clients_1.svg"
+            alt="clients logo"
+            class="dark:invert"
+          />
+          <img
+            src="assets/images/clients_2.svg"
+            alt="clients logo"
+            class="dark:invert"
+          />
           <img
             src="assets/images/clients_3.svg"
             alt="clients logo"
-            class="hidden lg:block"
+            class="dark:invert"
+          />
+          <img
+            src="assets/images/clients_4.svg"
+            alt="clients logo"
+            class="dark:invert"
+          />
+          <img
+            src="assets/images/clients_5.svg"
+            alt="clients logo"
+            class="dark:invert"
+          />
+          <img
+            src="assets/images/clients_6.svg"
+            alt="clients logo"
+            class="dark:invert"
+          />
+          <img
+            src="assets/images/clients_3.svg"
+            alt="clients logo"
+            class="hidden lg:block dark:invert"
           />
         </main>
       </section>
@@ -110,53 +159,67 @@
       <section class="container flex flex-col gap-5">
         <header class="flex flex-col items-center gap-2 text-center">
           <h4
-            class="font-semibold text-[22px] md:text-4xl text-D_Grey max-w-xl leading-7 md:leading-11"
+            class="font-semibold text-[22px] md:text-4xl text-D_Grey dark:text-white max-w-xl leading-7 md:leading-11"
           >
             Manage your entire community in a single system
           </h4>
-          <p class="text-gray text-sm md:text-base max-w-xl">
+          <p class="text-gray dark:text-gray-300 text-sm md:text-base max-w-xl">
             Who is Nextcent suitable for?
           </p>
         </header>
         <main
-          class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center gap-4 text-center text-gray"
+          class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center gap-4 text-center text-gray dark:text-gray-300"
         >
           <div
-            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300"
+            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 dark:border-gray-700 p-5 rounded-lg hover:shadow-xl dark:hover:shadow-gray-800/30 duration-300"
           >
             <div>
-              <img src="assets/images/community_1.svg" alt="user icon" />
+              <img
+                src="assets/images/community_1.svg"
+                alt="user icon"
+                class="dark:invert"
+              />
             </div>
-            <h5 class="font-bold text-3xl leading-9">
+            <h5 class="font-bold text-3xl leading-9 dark:text-white">
               Membership Organisations
             </h5>
-            <p class="text-gray leading-5">
+            <p class="text-gray dark:text-gray-300 leading-5">
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300"
+            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 dark:border-gray-700 p-5 rounded-lg hover:shadow-xl dark:hover:shadow-gray-800/30 duration-300"
           >
             <div>
-              <img src="assets/images/community_2.svg" alt="user icon" />
+              <img
+                src="assets/images/community_2.svg"
+                alt="user icon"
+                class="dark:invert"
+              />
             </div>
-            <h5 class="font-bold text-3xl leading-9">National Associations</h5>
-            <p class="text-gray leading-5">
+            <h5 class="font-bold text-3xl leading-9 dark:text-white">
+              National Associations
+            </h5>
+            <p class="text-gray dark:text-gray-300 leading-5">
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 p-5 rounded-lg hover:shadow-xl duration-300 md:col-span-2 lg:col-span-1"
+            class="flex flex-col items-center gap-2 max-w-xs border border-gray-200 dark:border-gray-700 p-5 rounded-lg hover:shadow-xl dark:hover:shadow-gray-800/30 duration-300 md:col-span-2 lg:col-span-1"
           >
             <div>
-              <img src="assets/images/community_3.svg" alt="user icon" />
+              <img
+                src="assets/images/community_3.svg"
+                alt="user icon"
+                class="dark:invert"
+              />
             </div>
-            <h5 class="font-bold text-3xl max-w-3xs leading-9">
+            <h5 class="font-bold text-3xl max-w-3xs leading-9 dark:text-white">
               Clubs And Groups
             </h5>
-            <p class="text-gray leading-5">
+            <p class="text-gray dark:text-gray-300 leading-5">
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
@@ -165,7 +228,9 @@
       </section>
       <!-- End community section -->
       <!-- Start Pixelgrade section -->
-      <section class="bg-gray-50 border-y border-gray-200 py-7">
+      <section
+        class="bg-gray-50 dark:bg-gray-800 border-y border-gray-200 dark:border-gray-700 py-7 transition-colors duration-300"
+      >
         <div class="container flex items-center justify-evenly gap-8">
           <div class="shrink-0 hidden lg:block">
             <img
@@ -176,11 +241,11 @@
           </div>
           <div class="max-w-2xl flex flex-col gap-2 lg:gap-4 items-start">
             <h4
-              class="font-semibold text-2xl lg:text-4xl leading-7 lg:leading-11 text-D_Grey max-w-xl"
+              class="font-semibold text-2xl lg:text-4xl leading-7 lg:leading-11 text-D_Grey dark:text-white max-w-xl"
             >
               The unseen of spending three years at Pixelgrade
             </h4>
-            <p class="text-gray text-sm md:text-base">
+            <p class="text-gray dark:text-gray-300 text-sm md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
               amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
               Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
@@ -188,7 +253,11 @@
               Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
               elementum pulvinar odio.
             </p>
-            <button class="btn-primary mt-2 lg:mt-4">Learn More</button>
+            <button
+              class="btn-primary mt-2 lg:mt-4 bg-primary dark:bg-green-600 text-white py-2.5 px-5 rounded-md"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </section>
@@ -199,61 +268,85 @@
       >
         <div class="max-w-xl flex flex-col gap-2">
           <h5
-            class="font-semibold text-2xl md:text-3xl lg:text-4xl leading-7 md:leading-9 lg:leading-11"
+            class="font-semibold text-2xl md:text-3xl lg:text-4xl leading-7 md:leading-9 lg:leading-11 dark:text-white"
           >
             Helping a local
-            <span class="text-primary block">business reinvent itself</span>
+            <span class="text-primary dark:text-green-400 block"
+              >business reinvent itself</span
+            >
           </h5>
-          <p class="text-sm lg:text-base text-gray">
+          <p class="text-sm lg:text-base text-gray dark:text-gray-300">
             We reached here with our hard work and dedication
           </p>
         </div>
         <div class="grid grid-cols-2 gap-4 md:gap-x-6 lg:gap-10">
           <div class="flex gap-4">
             <div
-              class="text-primary !text-2xl md:text-3xl icon-users-round"
+              class="text-primary dark:text-green-400 !text-2xl md:text-3xl icon-users-round"
             ></div>
             <div class="">
-              <h5 class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey">
+              <h5
+                class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey dark:text-white"
+              >
                 2,245,341
               </h5>
-              <p class="text-gray text-sm md:text-base">Members</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="text-primary !text-2xl md:text-3xl icon-hand"></div>
-            <div class="">
-              <h5 class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey">
-                46,328
-              </h5>
-              <p class="text-gray text-sm md:text-base">Clubs</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="text-primary !text-2xl md:text-3xl icon-pointer"></div>
-            <div class="">
-              <h5 class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey">
-                828,867
-              </h5>
-              <p class="text-gray text-sm md:text-base">Event Bookings</p>
+              <p class="text-gray dark:text-gray-300 text-sm md:text-base">
+                Members
+              </p>
             </div>
           </div>
           <div class="flex gap-4">
             <div
-              class="text-primary !text-2xl md:text-3xl icon-credit-card"
+              class="text-primary dark:text-green-400 !text-2xl md:text-3xl icon-hand"
             ></div>
             <div class="">
-              <h5 class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey">
+              <h5
+                class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey dark:text-white"
+              >
+                46,328
+              </h5>
+              <p class="text-gray dark:text-gray-300 text-sm md:text-base">
+                Clubs
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div
+              class="text-primary dark:text-green-400 !text-2xl md:text-3xl icon-pointer"
+            ></div>
+            <div class="">
+              <h5
+                class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey dark:text-white"
+              >
+                828,867
+              </h5>
+              <p class="text-gray dark:text-gray-300 text-sm md:text-base">
+                Event Bookings
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div
+              class="text-primary dark:text-green-400 !text-2xl md:text-3xl icon-credit-card"
+            ></div>
+            <div class="">
+              <h5
+                class="font-bold text-xl md:text-2xl lg:text-3xl text-D_Grey dark:text-white"
+              >
                 1,926,436
               </h5>
-              <p class="text-gray text-sm md:text-base">Payments</p>
+              <p class="text-gray dark:text-gray-300 text-sm md:text-base">
+                Payments
+              </p>
             </div>
           </div>
         </div>
       </section>
       <!-- End analytics section -->
       <!-- Start mobile section -->
-      <section class="bg-gray-50 border-y border-gray-200 py-7">
+      <section
+        class="bg-gray-50 dark:bg-gray-800 border-y border-gray-200 dark:border-gray-700 py-7 transition-colors duration-300"
+      >
         <div class="container flex items-center justify-evenly gap-8">
           <div class="shrink-0 hidden lg:block">
             <img
@@ -264,11 +357,11 @@
           </div>
           <div class="max-w-2xl flex flex-col gap-2 lg:gap-4 items-start">
             <h4
-              class="font-semibold text-2xl lg:text-4xl leading-7 lg:leading-11 text-D_Grey max-w-xl"
+              class="font-semibold text-2xl lg:text-4xl leading-7 lg:leading-11 text-D_Grey dark:text-white max-w-xl"
             >
               How to design your site footer like we did
             </h4>
-            <p class="text-gray text-sm md:text-base">
+            <p class="text-gray dark:text-gray-300 text-sm md:text-base">
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
               augue nec tincidunt molestie, massa nunc varius arcu, at
               scelerisque elit erat a magna. Donec quis erat at libero ultrices
@@ -279,7 +372,11 @@
               et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
               ipsum id gravida.
             </p>
-            <button class="btn-primary mt-2 lg:mt-4">Learn More</button>
+            <button
+              class="btn-primary mt-2 lg:mt-4 bg-primary dark:bg-green-600 text-white py-2.5 px-5 rounded-md"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </section>
@@ -294,7 +391,9 @@
           />
         </div>
         <div class="max-w-3xl flex flex-col gap-2 lg:gap-4 justify-center">
-          <p class="text-gray text-sm md:text-base font-medium leading-6">
+          <p
+            class="text-gray dark:text-gray-300 text-sm md:text-base font-medium leading-6"
+          >
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
             enim metus. Vivamus sed libero ornare, tristique quam in, gravida
@@ -307,22 +406,48 @@
             Curabitur id nibh id sem dignissim finibus ac sit amet magna.
           </p>
           <div class="flex flex-col gap-2">
-            <h5 class="text-primary font-semibold text-xl">Tim Smith</h5>
-            <p class="text-light-gray text-sm md:text-base">
+            <h5 class="text-primary dark:text-green-400 font-semibold text-xl">
+              Tim Smith
+            </h5>
+            <p class="text-light_gray dark:text-gray-400 text-sm md:text-base">
               British Dragon Boat Racing Association
             </p>
           </div>
           <div
             class="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-9 place-items-center justify-items-center gap-y-6 md:gap-y-8 lg:justify-items-start mt-4"
           >
-            <img src="assets/images/clients_1.svg" alt="Client Image" />
-            <img src="assets/images/clients_2.svg" alt="Client Image" />
-            <img src="assets/images/clients_3.svg" alt="Client Image" />
-            <img src="assets/images/clients_4.svg" alt="Client Image" />
-            <img src="assets/images/clients_5.svg" alt="Client Image" />
-            <img src="assets/images/clients_6.svg" alt="Client Image" />
+            <img
+              src="assets/images/clients_1.svg"
+              alt="Client Image"
+              class="dark:invert"
+            />
+            <img
+              src="assets/images/clients_2.svg"
+              alt="Client Image"
+              class="dark:invert"
+            />
+            <img
+              src="assets/images/clients_3.svg"
+              alt="Client Image"
+              class="dark:invert"
+            />
+            <img
+              src="assets/images/clients_4.svg"
+              alt="Client Image"
+              class="dark:invert"
+            />
+            <img
+              src="assets/images/clients_5.svg"
+              alt="Client Image"
+              class="dark:invert"
+            />
+            <img
+              src="assets/images/clients_6.svg"
+              alt="Client Image"
+              class="dark:invert"
+            />
             <button
-              class="col-span-3 lg:col-span-6 xl:col-span-3 place-self-center text-primary font-semibold text-xl p-2 flex gap-2"
+              class="col-span-3 lg:col-span-6 xl:col-span-3 place-self-center cursor-pointer text-primary dark:text-green-400 font-semibold text-xl p-2 flex gap-2"
             >
               Meet all customers
               <div class="icon-move-right"></div>
@@ -333,14 +458,16 @@
       <!-- End Customer section -->
       <!-- Start Demo Section -->
       <section
-        class="bg-gray-50 flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-8 py-8 border-y border-gray-200"
+        class="bg-gray-50 dark:bg-gray-800 flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-8 py-8 border-y border-gray-200 dark:border-gray-700 transition-colors duration-300"
       >
         <h4
-          class="font-semibold text-2xl md:text-4xl lg:text-6xl leading-7 lg:leading-16 text-gray max-w-4xl"
+          class="font-semibold text-2xl md:text-4xl lg:text-6xl leading-7 lg:leading-16 text-gray dark:text-gray-300 max-w-4xl"
         >
           Pellentesque suscipit fringilla libero eu.
         </h4>
-        <button class="btn-primary flex gap-2">
+        <button
+          class="btn-primary flex gap-2 bg-primary dark:bg-green-600 text-white py-2.5 px-5 rounded-md"
+        >
           Get a Demo
           <div class="icon-move-right"></div>
         </button>
