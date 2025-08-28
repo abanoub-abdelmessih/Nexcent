@@ -12,15 +12,29 @@ const toggleBtns = document.querySelectorAll(
 
 // Constants
 const SCROLL_THRESHOLD = 100;
+const THEME_KEY = "theme";
 
 // Scroll handler for navbar
 function handleScroll() {
   nav.classList.toggle("scroll-active", window.scrollY > SCROLL_THRESHOLD);
 }
 
+// Apply theme on load
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.documentElement.classList.toggle("dark", isDark);
+
+  toggleBtns.forEach((btn) => {
+    btn.innerHTML = isDark
+      ? "<div class='icon-sun'></div>"
+      : "<div class='icon-moon'></div>";
+  });
+}
+
 // Theme toggle functionality
 function toggleTheme() {
   const isDark = document.documentElement.classList.toggle("dark");
+  localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
 
   toggleBtns.forEach((btn) => {
     btn.innerHTML = isDark
@@ -60,4 +74,10 @@ function initEventListeners() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", initEventListeners);
+document.addEventListener("DOMContentLoaded", () => {
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem(THEME_KEY) || "light";
+  applyTheme(savedTheme);
+
+  initEventListeners();
+});
